@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>&lt;no title&gt; &#8212; Math Notes 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <dl>
+<dt>{</dt><dd><dl>
+<dt>“cells”: [</dt><dd><dl>
+<dt>{</dt><dd><p>“cell_type”: “code”,
+“execution_count”: 1,
+“metadata”: {},
+“outputs”: [],
+“source”: [</p>
+<blockquote>
+<div><p>“import sympy as smpn”,
+“import mathn”,
+“from IPython.display import displayn”,
+“from IPython.display import Markdown as md”</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div><p>“cell_type”: “code”,
+“execution_count”: 2,
+“metadata”: {},
+“outputs”: [</p>
+<blockquote>
+<div><dl>
+<dt>{</dt><dd><dl>
+<dt>“data”: {</dt><dd><dl class="simple">
+<dt>“text/markdown”: [</dt><dd><p>“# Fundamental Theorem Of Calculus:n”,
+“n”,
+“If $f$ is continuous on $[a, b]$ then the function $g$ defined by:n”,
+“n”,
+“$$n”,
+“\begin{aligned}n”,
+”    \boxed{g{(x)} = \int_{a}^{x}f(t)\ dt \qquad a \leqslant a \leqslant b}n”,
+“\end{aligned}n”,
+“$$n”,
+“n”,
+“is continuous on $[a, b]$ and differentiable on $(a, b)$, and $g^\prime(x) = f(x)$n”,
+“n”,
+“—n”</p>
+</dd>
+</dl>
+<p>],
+“text/plain”: [</p>
+<blockquote>
+<div><p>“&lt;IPython.core.display.Markdown object&gt;”</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+“metadata”: {},
+“output_type”: “display_data”</p>
+</dd>
+</dl>
+<p>},
+{</p>
+<blockquote>
+<div><dl>
+<dt>“data”: {</dt><dd><dl class="simple">
+<dt>“text/markdown”: [</dt><dd><p>“# Derivativesn”,
+“n”,
+“## Definition of Derivative:n”,
+“n”,
+“$$n”,
+“\begin{aligned}n”,
+“\boxed{\frac{d}{dx}(f(x)) = f^\prime(x) = \lim_{h \to 0}\frac{f(x + h) - f(x)}{h}}n”,
+“\end{aligned}n”,
+“$$n”,
+“n”,
+“—n”,
+“n”,
+“#### Derivative Rules:n”,
+“n”,
+“<code class="docutils literal notranslate"><span class="pre">`{admonition}Constant</span> <span class="pre">Rule:\n&quot;,</span>
+<span class="pre">&quot;:class:</span> <span class="pre">note\n&quot;,</span>
+<span class="pre">&quot;\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;\\begin{aligned}\n&quot;,</span>
+<span class="pre">&quot;\\frac{d}{dx}[c]</span> <span class="pre">=</span> <span class="pre">0\n&quot;,</span>
+<span class="pre">&quot;\\end{aligned}\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;`</span></code>n”,
+“n”,
+“$$n”,
+“\begin{gathered}n”,
+“\frac{d}{dx}32 = 0 \qquad \frac{d}{dx}\pi = 0n”,
+“\end{gathered}n”,
+“$$n”,
+“n”,
+“<code class="docutils literal notranslate"><span class="pre">`{admonition}Power</span> <span class="pre">Rule:\n&quot;,</span>
+<span class="pre">&quot;:class:</span> <span class="pre">note\n&quot;,</span>
+<span class="pre">&quot;\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;\\begin{aligned}\n&quot;,</span>
+<span class="pre">&quot;\\frac{d}{dx}[x^n]</span> <span class="pre">=</span> <span class="pre">nx^{n</span> <span class="pre">-</span> <span class="pre">1}\n&quot;,</span>
+<span class="pre">&quot;\\end{aligned}\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;`</span></code>n”,
+“n”,
+“$$n”,
+“\begin{gathered}n”,
+“\frac{d}{dx}n^2 = 2n \qquad \frac{d}{dx}\varphi^3 = 3 \varphi^2n”,
+“\end{gathered}n”,
+“$$n”,
+“n”,
+“<code class="docutils literal notranslate"><span class="pre">`{admonition}Product</span> <span class="pre">Rule:\n&quot;,</span>
+<span class="pre">&quot;:class:</span> <span class="pre">note\n&quot;,</span>
+<span class="pre">&quot;\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;\\begin{aligned}\n&quot;,</span>
+<span class="pre">&quot;\\frac{d}{dx}[f(x)g(x)]</span> <span class="pre">=</span> <span class="pre">f^\\prime(x)g(x)</span> <span class="pre">+</span> <span class="pre">f(x)g^\\prime(x)\n&quot;,</span>
+<span class="pre">&quot;\\end{aligned}\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;`</span></code>n”,
+“n”,
+“<code class="docutils literal notranslate"><span class="pre">`{admonition}Quotient</span> <span class="pre">Rule:\n&quot;,</span>
+<span class="pre">&quot;:class:</span> <span class="pre">note\n&quot;,</span>
+<span class="pre">&quot;\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;\\begin{aligned}\n&quot;,</span>
+<span class="pre">&quot;\\frac{d}{dx}\\left[\\frac{f(x)}{g(x)}\\right]</span> <span class="pre">=</span> <span class="pre">\\frac{g(x)f^\\prime(x)</span> <span class="pre">-</span> <span class="pre">f(x)g^\\prime(x)}{\\left[g(x)^{-2}\\right]}\n&quot;,</span>
+<span class="pre">&quot;\\end{aligned}\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;`</span></code>n”,
+“n”,
+“<code class="docutils literal notranslate"><span class="pre">`{admonition}Chain</span> <span class="pre">Rule:\n&quot;,</span>
+<span class="pre">&quot;:class:</span> <span class="pre">note\n&quot;,</span>
+<span class="pre">&quot;\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;\\begin{aligned}\n&quot;,</span>
+<span class="pre">&quot;\\frac{d}{dx}\\left[f(g(x))\\right]</span> <span class="pre">=</span> <span class="pre">f^\\prime(g(x))g^\\prime(x)\n&quot;,</span>
+<span class="pre">&quot;\\end{aligned}\n&quot;,</span>
+<span class="pre">&quot;$$\n&quot;,</span>
+<span class="pre">&quot;`</span></code>n”</p>
+</dd>
+</dl>
+<p>],
+“text/plain”: [</p>
+<blockquote>
+<div><p>“&lt;IPython.core.display.Markdown object&gt;”</p>
+</div></blockquote>
+<p>]</p>
+</dd>
+</dl>
+<p>},
+“metadata”: {},
+“output_type”: “display_data”</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>],
+“source”: [</p>
+<blockquote>
+<div><p>“display(md(‘../theorems/fundamental_theorem_of_calculus.md’))n”,
+“display(md(‘../md/derivatives.md’))”</p>
+</div></blockquote>
+<p>]</p>
+</div></blockquote>
+<p>},
+{</p>
+<blockquote>
+<div><p>“cell_type”: “markdown”,
+“metadata”: {},
+“source”: []</p>
+</div></blockquote>
+<p>}</p>
+</dd>
+</dl>
+<p>],
+“metadata”: {</p>
+<blockquote>
+<div><dl class="simple">
+<dt>“kernelspec”: {</dt><dd><p>“display_name”: “Python 3.10.4 (‘jupyter’)”,
+“language”: “python”,
+“name”: “python3”</p>
+</dd>
+</dl>
+<p>},
+“language_info”: {</p>
+<blockquote>
+<div><dl class="simple">
+<dt>“codemirror_mode”: {</dt><dd><p>“name”: “ipython”,
+“version”: 3</p>
+</dd>
+</dl>
+<p>},
+“file_extension”: “.py”,
+“mimetype”: “text/x-python”,
+“name”: “python”,
+“nbconvert_exporter”: “python”,
+“pygments_lexer”: “ipython3”,
+“version”: “3.10.4”</p>
+</div></blockquote>
+<p>},
+“orig_nbformat”: 4,
+“vscode”: {</p>
+<blockquote>
+<div><dl class="simple">
+<dt>“interpreter”: {</dt><dd><p>“hash”: “4a383ebf8b7fa777a8f40b44bc25a2608b263d5df6c9039a3f5a11f891d84405”</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>},
+“nbformat”: 4,
+“nbformat_minor”: 2</p>
+</dd>
+</dl>
+<p>}</p>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Math Notes</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2040, Me.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.5.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/main.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
